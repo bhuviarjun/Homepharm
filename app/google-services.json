@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "271432781962",
+    "project_id": "homepharm1-941d5",
+    "storage_bucket": "homepharm1-941d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271432781962:android:cdb99e41e7fca1c0b19d73",
+        "android_client_info": {
+          "package_name": "com.example.homepharm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2OjdqlISJ4lsUT6iGREa_C7iP6c0UcbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

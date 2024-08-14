@@ -1,0 +1,153 @@
+<!-- activity_in_sub.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk3"
+    android:textAlignment="viewStart"
+    tools:context=".InSub">
+
+    <TextView
+        android:id="@+id/titleInSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text=" HomePharm "
+        android:textColor="#fff"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleInSub"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="32dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:columnCount="1"
+            android:rowCount="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Insulinn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowSpan="1"
+                android:layout_column="0"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/insulin" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Insulin"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:justificationMode="inter_word"
+                        android:text="Insulin is a vital hormone in the body that plays a key role in regulating blood sugar levels. For individuals with diabetes, either Type 1 or Type 2, insulin is often used as a medication to help manage their blood sugar levels."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/price_insulin"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:text="Price: ₹500"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/expiry_insulin"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Expiry Date: 13.10.2025"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:justificationMode="inter_word"
+                        android:text="Warning: Store unopened insulin in the refrigerator (36-46°F or 2-8°C). Once opened, keep at room temperature up to 86°F (30°C) and use within the specified time."
+                        android:textColor="@color/red" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="15dp"
+                        android:paddingTop="10dp">
+
+                        <Button
+                            android:id="@+id/add_to_cart_button"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:text="ADD TO CART" />
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="BUY NOW" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
